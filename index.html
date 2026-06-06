@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store - نظام إدارة المتاجر الذكية</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Cairo', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            width: 120px; height: 120px;
+            background: white; border-radius: 30px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .logo img { width: 100px; height: 100px; border-radius: 25px; }
+        h1 { font-size: 36px; margin-bottom: 10px; }
+        .subtitle { font-size: 18px; opacity: 0.8; margin-bottom: 25px; }
+        .features {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 12px; margin-bottom: 30px; text-align: right;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 12px; border-radius: 12px;
+            font-size: 14px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: white; color: #0F2027;
+            padding: 15px 40px; border-radius: 50px;
+            font-size: 20px; font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+            50% { box-shadow: 0 5px 40px rgba(255,255,255,0.3); }
+        }
+        .footer { margin-top: 20px; opacity: 0.6; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="logo.png" alt="Smart Store"></div>
+        <h1>Smart Store</h1>
+        <p class="subtitle">نظام متكامل لإدارة المتاجر الذكية</p>
+        <div class="features">
+            <div class="feature">👥 5 أدوار مختلفة</div>
+            <div class="feature">📦 إدارة المخزون</div>
+            <div class="feature">🛒 سلة مشتريات</div>
+            <div class="feature">📄 فواتير PDF</div>
+            <div class="feature">📱 باركود</div>
+            <div class="feature">🤖 مساعد ذكي</div>
+            <div class="feature">🌙 وضع داكن</div>
+            <div class="feature">🌍 عربي/إنجليزي</div>
+        </div>
+        <a href="app-debug.apk" class="download-btn" download>⬇️ حمل التطبيق الآن</a>
+        <p class="footer">متوفر لأجهزة Android | Smart Store © 2025</p>
+    </div>
+</body>
+</html>
